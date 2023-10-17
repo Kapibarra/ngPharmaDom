@@ -8,13 +8,16 @@ import { MainComponent } from './pages/main/main.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HeroComponent } from './shared/components/hero/hero.component';
+import { AboutComponent } from './shared/components/about/about.component';
+import { ServicesComponent } from './shared/components/services/services.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
 @NgModule({
-  declarations: [AppComponent, MainComponent, ContactsPageComponent, HeroComponent],
+  declarations: [AppComponent, MainComponent, ContactsPageComponent, HeroComponent, AboutComponent, ServicesComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
