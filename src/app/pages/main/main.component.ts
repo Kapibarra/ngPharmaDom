@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main',
@@ -7,14 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  constructor(public translate: TranslateService) {}
+  constructor() {}
 
   ngOnInit(): void {}
-
-  changeLanguage(event: any) {
-    const selectedValue = event.target.value;
-    if (selectedValue) {
-      this.translate.use(selectedValue);
-    }
-  }
 }

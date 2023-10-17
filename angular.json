@@ -6,6 +6,9 @@
     "ngPharmaDom": {
       "projectType": "application",
       "schematics": {
+        "@ngneat/transloco": {
+          "collection": "@ngneat/transloco/schematics"
+        },
         "@schematics/angular:component": {
           "style": "scss"
         }
