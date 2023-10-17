@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 @font-face {
   font-family: "Manrope";
   src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
@@ -117,6 +119,7 @@ section {
 }
 body {
   line-height: 1;
+  background: #eff1f4;
 }
 ol,
 ul {

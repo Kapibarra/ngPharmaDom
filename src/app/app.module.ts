@@ -11,17 +11,31 @@ import { HeroComponent } from './shared/components/hero/hero.component';
 import { AboutComponent } from './shared/components/about/about.component';
 import { ServicesComponent } from './shared/components/services/services.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Import BrowserAnimationsModule
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
 @NgModule({
-  declarations: [AppComponent, MainComponent, ContactsPageComponent, HeroComponent, AboutComponent, ServicesComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    MainComponent,
+    ContactsPageComponent,
+    HeroComponent,
+    AboutComponent,
+    ServicesComponent,
+    FooterComponent,
+  ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    ButtonModule,
+    DialogModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -13,6 +13,9 @@
         "TITLE-4": "Hello Angular with ngx-translate!",
         "TEXT-4": "Change language"
       },
+      "FOOTERBUTTON": {
+        "BUTTON":"Contact Us"
+      },
     "HERO": {
        "TITLE": "Young and actively developing pharmaceutical company providing services from A to Z in this market."
             },

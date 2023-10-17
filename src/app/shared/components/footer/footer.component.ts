@@ -19,4 +19,9 @@ export class FooterComponent {
     // Установите выбранный язык
     translate.use(langToUse);
   }
+  visible: boolean = false;
+
+  showDialog() {
+    this.visible = true;
+  }
 }
