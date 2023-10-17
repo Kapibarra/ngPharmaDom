@@ -2,5 +2,9 @@
     "HOME": {
       "TITLE": "Hello Angular with ngx-translate!",
       "SELECT": "Change language"
-    }
+    },
+    "HERO": {
+        "TITLE": "Young and actively developing pharmaceutical company providing services from A to Z in this market."
+            },
+            "BUTTON": "Become client"
   }

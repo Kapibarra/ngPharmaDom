@@ -7,13 +7,14 @@ import { ContactsPageComponent } from './pages/contacts-page/contacts-page.compo
 import { MainComponent } from './pages/main/main.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HeroComponent } from './shared/components/hero/hero.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
 @NgModule({
-  declarations: [AppComponent, MainComponent, ContactsPageComponent],
+  declarations: [AppComponent, MainComponent, ContactsPageComponent, HeroComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
