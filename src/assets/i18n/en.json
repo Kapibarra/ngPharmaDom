@@ -19,6 +19,16 @@
     "HERO": {
        "TITLE": "Young and actively developing pharmaceutical company providing services from A to Z in this market."
             },
-    "BUTTON": "Become client"
-
+    "BUTTON": "Become client",
+    "SERVICE": {
+      "TITLE": "Our services",
+      "SUBTITLE-1":"Russia and other countries",
+      "SUBTITLE-2":"Russia and other countries",
+      "SUBTITLE-3":"Russia and other countries",
+      "NAME-1":"Регулирующие услуги",
+      "NAME-2":"Logistic service",
+      "NAME-3":"Регулирующие услуги",
+      "BUTTON-1":"Order",
+      "BUTTON-2":"About"
+    }
   }
