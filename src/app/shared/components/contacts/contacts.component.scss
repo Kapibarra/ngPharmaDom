@@ -1,8 +1,44 @@
+.contacts__title {
+  color: #1d1d1d;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 115%; /* 46px */
+  text-transform: uppercase;
+}
+.contacts {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contacts__button {
+  color: #292c35;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  display: flex;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #101828;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 .form__wrapper {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   background: #fff;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
   & .form__image {
     width: 100%;
     max-width: 720px;
@@ -11,22 +47,14 @@
       max-width: 720px;
     }
   }
-  & .contacts {
-  }
-
-  .contacts__title {
-  }
-
-  .contacts__button {
-    /* Стили для кнопки "Скачать буклет о компании" */
-  }
 
   .contacts__map {
     /* Стили для карты (если есть) */
   }
 
   .form__contacts {
-    /* Стили для блока с контактной информацией и формой */
+    width: 100%;
+    max-width: 600px;
   }
 
   .form__title {
@@ -51,24 +79,47 @@
   }
 
   .form__adress {
-    /* Стили для адреса */
+    color: #20304a;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 135%; /* 21.6px */
+    letter-spacing: -0.32px;
+    opacity: 0.5;
+    max-width: 330px;
+    margin-top: 100px;
   }
 
   .form__contacts-links {
-    /* Стили для блока с контактными ссылками */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 30px;
   }
 
   .form__link {
-    /* Стили для контактных ссылок */
+    color: #20304a;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 145%; /* 31.9px */
+    text-decoration: none;
   }
 
   .highlighted {
-    /* Стили для выделенных текстовых элементов */
+    color: #3cb3e7;
+    font-family: Arial;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 145%;
   }
 
   & .contact-form {
     width: 100%;
-    max-width: 720px;
+    max-width: 550px;
     box-sizing: border-box;
     padding: 20px;
     @media (max-width: 428px) {
@@ -170,8 +221,9 @@
           padding: 12px 16px;
           gap: 8px;
           border-radius: 12px;
-          opacity: 0.05;
-          background: #20304a;
+          //   opacity: 0.05;
+          border: none;
+          background: #eff1f4;
           &:focus-visible {
             border-color: #39afe2;
             outline: #39afe2 !important;
@@ -184,8 +236,9 @@
           padding: 12px 16px;
           gap: 8px;
           border-radius: 12px;
-          opacity: 0.05;
-          background: #20304a;
+          //   opacity: 0.05;
+          background: #eff1f4;
+          border: none;
           min-height: 100px;
           &:focus-visible {
             border-color: #39afe2;
