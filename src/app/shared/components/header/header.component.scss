@@ -1,0 +1,89 @@
+.header__lang-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+  margin: 1rem 0;
+  gap: 10px;
+  color: #20304a;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #20304a;
+}
+.header__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header__lang-select label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.header__lang-select select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Примените стили к выпадающему списку PrimeNG */
+.ui-dropdown {
+  width: 100%;
+}
+
+/* Стили для выбранных опций в выпадающем списке PrimeNG */
+.ui-dropdown-label {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+/* Стили для стрелки в выпадающем списке PrimeNG */
+.ui-dropdown-trigger {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header__logo img {
+  width: 100%;
+  max-width: 200px;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.menu__link a {
+  border-radius: 33px;
+  background: #fff;
+  color: #20304a;
+  font-family: Arial;
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  width: fit-content;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px 25px;
+}
