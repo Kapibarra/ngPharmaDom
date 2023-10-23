@@ -15,7 +15,9 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { ServicePageComponent } from './pages/service-page/service-page.component'; // Import BrowserAnimationsModule
+import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { ContactsComponent } from './shared/components/contacts/contacts.component'; // Import BrowserAnimationsModule
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -32,11 +34,14 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FooterComponent,
     HeaderComponent,
     ServicePageComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     ButtonModule,
     DialogModule,

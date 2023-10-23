@@ -1,0 +1,261 @@
+.form__wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: #fff;
+  & .form__image {
+    width: 100%;
+    max-width: 720px;
+    & img {
+      width: 100%;
+      max-width: 720px;
+    }
+  }
+  & .contacts {
+  }
+
+  .contacts__title {
+  }
+
+  .contacts__button {
+    /* Стили для кнопки "Скачать буклет о компании" */
+  }
+
+  .contacts__map {
+    /* Стили для карты (если есть) */
+  }
+
+  .form__contacts {
+    /* Стили для блока с контактной информацией и формой */
+  }
+
+  .form__title {
+    color: #3cb3e7;
+    font-family: Arial;
+    width: 100%;
+    max-width: 614px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 115%; /* 57.5px */
+    text-transform: uppercase;
+    & .black {
+      color: #20304a;
+      font-family: Arial;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 115%;
+      text-transform: uppercase;
+    }
+  }
+
+  .form__adress {
+    /* Стили для адреса */
+  }
+
+  .form__contacts-links {
+    /* Стили для блока с контактными ссылками */
+  }
+
+  .form__link {
+    /* Стили для контактных ссылок */
+  }
+
+  .highlighted {
+    /* Стили для выделенных текстовых элементов */
+  }
+
+  & .contact-form {
+    width: 100%;
+    max-width: 720px;
+    box-sizing: border-box;
+    padding: 20px;
+    @media (max-width: 428px) {
+      padding: 50px 10px;
+    }
+    & .contact-form-title {
+      font-family: Halvar Breitschrift;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 60px;
+      letter-spacing: -0.02em;
+      color: #101828;
+      margin-bottom: 24px;
+    }
+    & .contact-form-subtitle {
+      font-family: Halvar Breitschrift;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #667085;
+      margin-bottom: 40px;
+      & a {
+        text-decoration: none;
+        color: #eb8205;
+      }
+    }
+    & .contact-form-button {
+      width: 286px;
+      height: 65px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      border: 1px solid #39afe2;
+      color: #3cb3e7;
+      text-align: center;
+      font-family: Arial;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 120%; /* 19.2px */
+      text-transform: uppercase;
+      background: #eff1f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      box-sizing: border-box;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    & .btn-disabled {
+      opacity: 0.5;
+      cursor: not-allowed !important;
+    }
+    & .contact-form-item {
+      margin-bottom: 24px;
+      & .contact-form-checkboxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 512px;
+        & span {
+          /* Text md/Medium */
+
+          font-family: Halvar Breitschrift;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height, or 150% */
+
+          /* Gray/700 */
+
+          color: #344054;
+          margin-left: 6px;
+        }
+      }
+      & .contact-form-label__group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        & label {
+          font-family: Halvar Breitschrift;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #344054;
+        }
+        & input {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px 16px;
+          gap: 8px;
+          border-radius: 12px;
+          opacity: 0.05;
+          background: #20304a;
+          &:focus-visible {
+            border-color: #39afe2;
+            outline: #39afe2 !important;
+          }
+        }
+        & textarea {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 12px 16px;
+          gap: 8px;
+          border-radius: 12px;
+          opacity: 0.05;
+          background: #20304a;
+          min-height: 100px;
+          &:focus-visible {
+            border-color: #39afe2;
+            outline: #39afe2 !important;
+          }
+        }
+      }
+    }
+  }
+}
+.error {
+  font-family: Halvar Breitschrift;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: red !important;
+  margin-top: 10px;
+}
+.success {
+  font-family: Halvar Breitschrift;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(0, 153, 0) !important;
+  margin-top: 10px;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Halvar Breitschrift;
+  line-height: 1.4;
+  cursor: pointer;
+  color: #333;
+}
+
+.checkbox-label a {
+  color: #0077ff;
+}
+
+.checkbox-label input[type="checkbox"] {
+  opacity: 1;
+}
+
+.checkbox-label input[type="checkbox"] + span {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.checkbox-label input[type="checkbox"]:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  background: #0077ff;
+  border-radius: 2px;
+}
