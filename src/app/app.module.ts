@@ -18,6 +18,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { ContactsComponent } from './shared/components/contacts/contacts.component'; // Import BrowserAnimationsModule
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductsPageComponent } from './pages/products-page/products-page.component';
+import { ServicesMainComponent } from './shared/components/services-main/services-main.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -35,6 +37,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HeaderComponent,
     ServicePageComponent,
     ContactsComponent,
+    ProductsPageComponent,
+    ServicesMainComponent,
   ],
   imports: [
     BrowserModule,
