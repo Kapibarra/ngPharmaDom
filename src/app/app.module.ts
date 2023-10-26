@@ -20,6 +20,9 @@ import { ContactsComponent } from './shared/components/contacts/contacts.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { ServicesMainComponent } from './shared/components/services-main/services-main.component';
+import { AccordionModule } from 'primeng/accordion';
+import { TableModule } from 'primeng/table';
+import { InputTextModule } from 'primeng/inputtext';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -49,6 +52,9 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     HttpClientModule,
     ButtonModule,
     DialogModule,
+    AccordionModule,
+    TableModule,
+    InputTextModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
