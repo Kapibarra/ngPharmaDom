@@ -23,6 +23,7 @@ import { ServicesMainComponent } from './shared/components/services-main/service
 import { AccordionModule } from 'primeng/accordion';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
+import { DrugsPageComponent } from './pages/drugs-page/drugs-page.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ContactsComponent,
     ProductsPageComponent,
     ServicesMainComponent,
+    DrugsPageComponent,
   ],
   imports: [
     BrowserModule,
