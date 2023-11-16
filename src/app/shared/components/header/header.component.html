@@ -22,10 +22,21 @@
     </div>
     <div class="header__bottom">
       <ul class="header__menu">
-        <li class="menu__link"><a routerLink="/">Главная</a></li>
-        <li class="menu__link"><a routerLink="/contacts">Контакты</a></li>
-        <li class="menu__link"><a routerLink="/services">Услуги</a></li>
-        <li class="menu__link"><a routerLink="/products">Продукты</a></li>
+        <li class="menu__link">
+          <a routerLink="/"> {{ "HEADER.MENU-1" | translate }}</a>
+        </li>
+        <li class="menu__link">
+          <a routerLink="/drugs">{{ "HEADER.MENU-2" | translate }}</a>
+        </li>
+        <li class="menu__link">
+          <a routerLink="/products">{{ "HEADER.MENU-3" | translate }}</a>
+        </li>
+        <li class="menu__link">
+          <a routerLink="/services">{{ "HEADER.MENU-4" | translate }}</a>
+        </li>
+        <li class="menu__link">
+          <a routerLink="/contacts">{{ "HEADER.MENU-5" | translate }}</a>
+        </li>
       </ul>
     </div>
   </div>

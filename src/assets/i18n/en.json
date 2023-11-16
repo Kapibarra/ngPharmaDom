@@ -1,17 +1,24 @@
 {
+  "HEADER": {
+  "MENU-1": "Home",
+  "MENU-2": "Medications",
+  "MENU-3": "Products",
+  "MENU-4": "Services",
+  "MENU-5": "Contacts"
+  },
     "HOME": {
       "TITLE": "Hello Angular with ngx-translate!",
       "SELECT": "Change language"
     },
     "ABOUT": {
-        "TITLE-1": "Hello Angular with ngx-translate!",
-        "TEXT-1": "Change language",
-        "TITLE-2": "Hello Angular with ngx-translate!",
-        "TEXT-2": "Change language",
-        "TITLE-3": "Hello Angular with ngx-translate!",
-        "TEXT-3": "Change language",
-        "TITLE-4": "Hello Angular with ngx-translate!",
-        "TEXT-4": "Change language"
+      "TITLE-1": "Production",
+      "TEXT-1": "OOO 'Farmadom' is a company with an extensive portfolio. Production of finished pharmaceuticals at Russian pharmaceutical sites. The key directions of the portfolio include generics of various therapeutic groups, in demand in retail pharmacies.",
+      "TITLE-2": "Distribution",
+      "TEXT-2": "We specialize in supplies of active pharmaceutical ingredients, packaging materials, excipients, and analytical standards from India and China.",
+      "TITLE-3": "Logistic Services",
+      "TEXT-3": "Full control of deliveries with the possibility of shipping goods of different volumes, temperature regimes on CIP and DDP terms (from our warehouse in Moscow).",
+      "TITLE-4": "Registration Services",
+      "TEXT-4": "OOO 'Farmadom' is ready to assist in making relevant changes to the regulatory documentation of substances, within the framework of the current legislation of the Russian Federation."
       },
       "FOOTERBUTTON": {
         "BUTTON":"Contact Us"
