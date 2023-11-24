@@ -2,15 +2,19 @@
   <div class="services">
     <div class="service__card">
       <img src="assets/imgs/service-card-1.png" />
-      Логистические услуги
+      {{ "SERVICES.TITLECARD-1" | translate }}
     </div>
     <div class="service__card">
       <img src="assets/imgs/service-card-2.png" />
-      Регуляторные услуги
+      {{ "SERVICES.TITLECARD-2" | translate }}
     </div>
     <div class="service__card">
       <img src="assets/imgs/service-card-3.png" />
-      Складские услуги
+      {{ "SERVICES.TITLECARD-3" | translate }}
+    </div>
+    <div class="service__card">
+      <img src="assets/imgs/service-card-4.png" />
+      {{ "SERVICES.TITLECARD-4" | translate }}
     </div>
   </div>
   <div class="services__banner">
@@ -34,13 +38,11 @@
   </div>
   <div class="service__description-card">
     <div class="service__description">
-      <div class="description__title">Консолидацию грузов</div>
+      <div class="description__title">
+        {{ "SERVICES.DESCRIPTIONCARD-1" | translate }}
+      </div>
       <div class="description__content">
-        Консолидацию грузов - многим компаниям необходима перевозка
-        международных грузов небольшими объёмами. В таком случае – перевозка в
-        целом контейнере или транспортном средстве становится невыгодна. В целях
-        снижения затрат, малогабаритные товарные партии обычно перевозят в
-        составе сборного груза, так называемого консолидированного груза.
+        {{ "SERVICES.DESCRIPTIONCONTENT-1" | translate }}
       </div>
     </div>
     <div class="description__button">
@@ -50,12 +52,11 @@
   </div>
   <div class="service__description-card">
     <div class="service__description">
-      <div class="description__title"> Перевозки с холодовой цепью</div>
+      <div class="description__title">
+          {{ "SERVICES.DESCRIPTIONCARD-2" | translate }}
+      </div>
       <div class="description__content">
-        важная составляющая этого процесса - перевозки с температурным режимом,
-        при которых обеспечиваются условия, необходимые для сохранности
-        биопрепарата в пригодном для использования виде на протяжении всего пути
-        следования.
+        {{ "SERVICES.DESCRIPTIONCONTENT-2" | translate }}
       </div>
     </div>
     <div class="description__button">
@@ -97,13 +98,45 @@
         при условии, если у клиента нет срочности в доставке груза.
       </div>
     </div>
-    <div class="description__button">
+    <div
+      class="description__button"
+      (click)="showDialog()"
+      icon="pi pi-external-link"
+      label="Show"
+    >
       Задать вопрос
       <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
   <div class="services__banner">
     <img src="assets/imgs/service-2.png" />
+  </div>
+  <div class="service__description-card">
+    <div class="service__description">
+      <div class="description__title">Регуляторные услуги</div>
+      <div class="description__content">
+        Регуляторные вопросы являются важной и неотъемлемой частью
+        фармацевтической отрасли. В силу специфики этой отрасли,
+        фармацевтические компании должны строго следовать многочисленным
+        правилам, нормам и законодательству, чтобы обеспечить безопасность и
+        эффективность своих продуктов. Команда экспертов ООО «Фармадом» готова
+        оказать всю необходимую помощь в регуляторных вопросах каждому заказчику
+        на международном фарм-рынке. В спектр наших компетенций входят:
+        получение сертификатов ЕАЭС, получение лицензий на фармацевтическую
+        деятельность, внесение изменений в нормативную документацию субстанций и
+        готовых лекарственных форм в рамках действующего законодательства РФ и
+        других стран-партнеров.​
+      </div>
+    </div>
+    <div
+      class="description__button"
+      (click)="showDialog()"
+      icon="pi pi-external-link"
+      label="Show"
+    >
+      Задать вопрос
+      <img src="assets/imgs/button-arrow-big.png" />
+    </div>
   </div>
   <div class="services__banner">
     <img src="assets/imgs/service-3.png" />
@@ -135,9 +168,72 @@
         продуктов, чтобы обеспечить их безопасность и соответствие требованиям.
       </div>
     </div>
-    <div class="description__button">
+    <div
+      class="description__button"
+      (click)="showDialog()"
+      icon="pi pi-external-link"
+      label="Show"
+    >
+      Задать вопрос
+      <img src="assets/imgs/button-arrow-big.png" />
+    </div>
+  </div>
+  <div class="services__banner">
+    <img src="assets/imgs/service-4.png" />
+  </div>
+  <div class="service__description-card">
+    <div class="service__description">
+      <div class="description__title">
+        Маркетинг и анализ фармацевтического рынка
+      </div>
+      <div class="description__content">
+        В целях реализации планов заинтересованных лиц (иностранные
+        производители фармацевтического сырья, готовой лекарственной продукции),
+        которые хотят стать участниками фармацевтического рынка Российской
+        Федерации и Беларуси, наша компания предоставляет услуги по
+        маркетинговому исследованию и продвижению фармацевтической продукции,
+        используя обширные ресурсы, опыт и знание фармацевтического рынка.
+        <br />Анализ рынка может представлять собой: <br />✓ Анализ размера,
+        динамики и потенциала развития рынка <br />✓ Исследование конъюнктуры
+        рынка, сегментация рынка и выделение ключевых сегментов <br />✓
+        Конкурентный анализ рынка ✓ Анализ цен и общий экономический анализ
+        рынка <br />✓ Анализ структуры распределения или дистрибуции товара на
+        рынке <br />✓ Анализ спроса, ключевых потребностей и особенностей
+        поведения покупателей на рынке <br />✓ Выявление главных рыночных и
+        потребительских тенденций <br />Продвижение продукции на
+        фармацевтическом рынке: Наша компания обладает широкой базой участников
+        фармацевтического рынка. Мы осуществляем поддержу и продвижение,
+        информирование новых участников фармацевтического рынка с целью выхода
+        их продукции в широкое потребление. Многолетний опыт работы с
+        производителями готовых лекарственных форм дает существенные результаты
+        нашим клиентам и помогает им приобрести свою нишу на данном рынке.
+      </div>
+    </div>
+    <div
+      class="description__button"
+      (click)="showDialog()"
+      icon="pi pi-external-link"
+      label="Show"
+    >
       Задать вопрос
       <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
 </div>
+<p-dialog
+  header="Header"
+  [(visible)]="visible"
+  [modal]="true"
+  [style]="{ width: '50vw' }"
+  [draggable]="false"
+  [resizable]="false"
+>
+  <p class="m-0">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</p-dialog>

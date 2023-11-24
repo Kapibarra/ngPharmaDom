@@ -27,6 +27,12 @@
   font-style: normal;
   font-weight: 900;
   line-height: 21px; /* 105% */
+  width: 100%;
+  max-width: 260px;
+  & img {
+    width: 100%;
+    max-width: 260px;
+  }
 }
 
 .service__card img {

@@ -37,5 +37,16 @@
       "NAME-3":"Регулирующие услуги",
       "BUTTON-1":"Order",
       "BUTTON-2":"About"
+    },
+    "SERVICES": {
+      "TITLECARD-1": "Logistic Services",
+      "TITLECARD-2": "Regulatory Services",
+      "TITLECARD-3": "Warehousing Services",
+      "TITLECARD-4": "Marketing Services",
+      "DESCRIPTIONCARD-1": "Cargo Consolidation",
+      "DESCRIPTIONCONTENT-1": "Cargo consolidation is necessary for many companies requiring the transportation of international goods in small volumes. In such cases, transporting an entire container or vehicle becomes cost-prohibitive. To reduce costs, small-sized shipments are typically transported as part of consolidated cargo, commonly known as consolidated shipments.",
+      "DESCRIPTIONCARD-2": "Cold Chain Transport",
+      "DESCRIPTIONCONTENT-2": "An important component of this process is transportation with a temperature regime, ensuring the conditions necessary for the preservation of bio-products in a usable state throughout the entire journey."
     }
+    
   }
