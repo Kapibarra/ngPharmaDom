@@ -11,11 +11,21 @@
     <div class="footer__menu">
       <div class="footer__menu-links">
         <ul>
-          <li class="menulink-item">Пункт меню</li>
-          <li class="menulink-item">Пункт меню</li>
-          <li class="menulink-item">Пункт меню</li>
-          <li class="menulink-item">Пункт меню</li>
-          <li class="menulink-item">Пункт меню</li>
+          <li class="menu__link">
+            <a routerLink="/"> {{ "HEADER.MENU-1" | translate }}</a>
+          </li>
+          <li class="menu__link">
+            <a routerLink="/drugs">{{ "HEADER.MENU-2" | translate }}</a>
+          </li>
+          <li class="menu__link">
+            <a routerLink="/products">{{ "HEADER.MENU-3" | translate }}</a>
+          </li>
+          <li class="menu__link">
+            <a routerLink="/services">{{ "HEADER.MENU-4" | translate }}</a>
+          </li>
+          <li class="menu__link">
+            <a routerLink="/contacts">{{ "HEADER.MENU-5" | translate }}</a>
+          </li>
         </ul>
       </div>
       <div class="footer__menu-info">
