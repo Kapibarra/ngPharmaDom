@@ -6,7 +6,7 @@
     & .drugs__title {
       color: #20304a;
       font-family: Arial;
-      font-size: 36px;
+      font-size: 20px;
       font-style: normal;
       font-weight: 900;
       line-height: normal;
@@ -90,5 +90,64 @@
         }
       }
     }
+  }
+}
+.drugs__description-card {
+  border-radius: 12px;
+  border: 1px solid #3cb3e7;
+  background: #fff;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.drugs__description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 640px;
+}
+.description__title {
+  color: #282e3e;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 120% */
+}
+.description__content {
+  color: #20304a;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px; /* 121.429% */
+}
+.description__button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 340px;
+  align-items: center;
+  color: #20304a;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 120% */
+  justify-content: space-between;
+  gap: 30px;
+  text-decoration: underline;
+  & img {
   }
 }

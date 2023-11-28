@@ -1,55 +1,18 @@
 <div class="drugs__wrapper">
   <div class="drugs">
-    <div class="drugs__title">Препараты</div>
-    <div class="drugs__cards-wrapper">
-      <div class="drugs__card-item">
-        <div class="drugs__card-img-wrapper">
-          <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
-        </div>
-        <div class="drugs__card-file-title">
-          APIs_Therapeutic_Categorisation.xlsx
-        </div>
-        <button
-          class="drugs__btn"
-          (click)="downloadFile('APIs_Therapeutic_Categorisation.xlsx')"
-        >
-          Скачать файл
-        </button>
+    <div class="drugs__title">
+      Наша компания реализовывает в России готовую лекарственную продукцию по
+      следующим сегментам:
+    </div>
+    <div class="drugs__description-card">
+      <div class="drugs__description">
+        <div class="description__title">Кардиология</div>
+        <div class="description__content"></div>
       </div>
-      <div class="drugs__card-title">Активные фармацевтические субстанции</div>
-      <div class="drugs__card-item">
-        <div class="drugs__card-img-wrapper">
-          <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
-        </div>
-        <div class="drugs__card-file-title">
-          Samarpit_Impurities_and_Standards_Offered
-        </div>
-        <button
-          class="drugs__btn"
-          (click)="downloadFile('Samarpit_Impurities_and_Standards_Offered')"
-        >
-          Скачать файл
-        </button>
+      <div class="description__button" icon="pi pi-external-link" label="Show">
+        Задать вопрос
+        <img src="assets/imgs/button-arrow-big.png" />
       </div>
-      <div class="drugs__card-title">
-        Стандартные образцы и стандарты примесей
-      </div>
-
-      <div class="drugs__card-item">
-        <div class="drugs__card-img-wrapper">
-          <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
-        </div>
-        <div class="drugs__card-file-title">
-          Samarpit_Product_Excipients.xlsx
-        </div>
-        <button
-          class="drugs__btn"
-          (click)="downloadFile('Samarpit_Product_Excipients')"
-        >
-          Скачать файл
-        </button>
-      </div>
-      <div class="drugs__card-title">Вспомогательные вещества</div>
     </div>
   </div>
 </div>

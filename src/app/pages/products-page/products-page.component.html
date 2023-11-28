@@ -19,59 +19,60 @@
       </div>
     </div>
   </div>
-  <p-accordion [activeIndex]="0">
-    <p-accordionTab header="Активные фармацевтические ингредиенты (АФИ, АФС)">
-      <div class="p-inputgroup">
-        <input
-          pInputText
-          placeholder="Поиск по названию"
-          [(ngModel)]="searchText"
-          (input)="filterProducts()"
-        />
-        <span class="p-inputgroup-addon">
-          <i class="pi pi-search"></i>
-        </span>
-      </div>
+  <div class="drugs__wrapper">
+    <div class="drugs">
+      <div class="drugs__cards-wrapper">
+        <div class="drugs__card-item">
+          <div class="drugs__card-img-wrapper">
+            <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
+          </div>
+          <div class="drugs__card-file-title">
+            APIs_Therapeutic_Categorisation.xlsx
+          </div>
+          <button
+            class="drugs__btn"
+            (click)="downloadFile('APIs_Therapeutic_Categorisation.xlsx')"
+          >
+            Скачать файл
+          </button>
+        </div>
+        <div class="drugs__card-title">
+          Активные фармацевтические субстанции
+        </div>
+        <div class="drugs__card-item">
+          <div class="drugs__card-img-wrapper">
+            <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
+          </div>
+          <div class="drugs__card-file-title">
+            Samarpit_Impurities_and_Standards_Offered
+          </div>
+          <button
+            class="drugs__btn"
+            (click)="downloadFile('Samarpit_Impurities_and_Standards_Offered')"
+          >
+            Скачать файл
+          </button>
+        </div>
+        <div class="drugs__card-title">
+          Стандартные образцы и стандарты примесей
+        </div>
 
-      <p-table
-        [value]="filteredProducts"
-        [rows]="rows"
-        [first]="first"
-        [paginator]="true"
-      >
-        <ng-template pTemplate="header">
-          <tr>
-            <th>Наименование</th>
-          </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-product>
-          <tr>
-            <td>{{ product.name }}</td>
-          </tr>
-        </ng-template>
-      </p-table>
-    </p-accordionTab>
-    <p-accordionTab header="Вспомогательные вещества">
-      <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non
-        numquam eius modi.
-      </p>
-    </p-accordionTab>
-    <p-accordionTab header="Пленочное покрытие для таблеток">
-      <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-        et quas molestias excepturi sint occaecati cupiditate non provident,
-        similique sunt in culpa qui officia deserunt mollitia animi, id est
-        laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-        distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-        cumque nihil impedit quo minus.
-      </p>
-    </p-accordionTab>
-  </p-accordion>
+        <div class="drugs__card-item">
+          <div class="drugs__card-img-wrapper">
+            <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
+          </div>
+          <div class="drugs__card-file-title">
+            Samarpit_Product_Excipients.xlsx
+          </div>
+          <button
+            class="drugs__btn"
+            (click)="downloadFile('Samarpit_Product_Excipients')"
+          >
+            Скачать файл
+          </button>
+        </div>
+        <div class="drugs__card-title">Вспомогательные вещества</div>
+      </div>
+    </div>
+  </div>
 </div>

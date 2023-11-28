@@ -65,3 +65,98 @@
   max-width: 590px;
   border: 1px solid #dee2e6;
 }
+.drugs__wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  & .drugs {
+    & .drugs__title {
+      color: #20304a;
+      font-family: Arial;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+      border: 1px solid #dee2e6;
+      color: #20304a;
+      background: #f8f9fa;
+      border-radius: 6px;
+      box-sizing: border-box;
+      padding: 32px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    & .drugs__cards-wrapper {
+      & .drugs__card-title {
+        color: #20304a;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 5px;
+        text-align: right;
+      }
+      & .drugs__card-item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        border: 1px solid #dee2e6;
+        color: #20304a;
+        background: #f8f9fa;
+        border-radius: 6px;
+        box-sizing: border-box;
+        padding: 14px;
+        margin-top: 20px;
+        align-items: center;
+        & .drugs__card-img-wrapper {
+          border-radius: 6px;
+          box-sizing: border-box;
+          background: rgb(230, 243, 236);
+          padding: 12px;
+        }
+        & .drugs__card-file-title {
+          color: var(--gray, rgba(48, 48, 48, 0.9));
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 165%; /* 33px */
+          letter-spacing: 0.4px;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        & .drugs__btn {
+          border-radius: 6px;
+          background: rgb(230, 243, 236);
+          color: #20304a;
+          font-family: Manrope;
+          font-size: 16px;
+          border: 1px solid #20304a;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          display: flex;
+          padding: 4px 12px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          cursor: pointer;
+          font-family: Manrope;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
