@@ -24,6 +24,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { DrugsPageComponent } from './pages/drugs-page/drugs-page.component';
+import { DropdownModule } from 'primeng/dropdown';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -53,6 +54,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     ReactiveFormsModule,
     HttpClientModule,
     ButtonModule,
+    DropdownModule,
+
     DialogModule,
     AccordionModule,
     TableModule,

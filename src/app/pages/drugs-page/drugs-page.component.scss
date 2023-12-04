@@ -109,6 +109,12 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.drugs__dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
 .drugs__description {
   display: flex;
   flex-direction: column;

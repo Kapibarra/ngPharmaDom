@@ -14,5 +14,42 @@
         <img src="assets/imgs/button-arrow-big.png" />
       </div>
     </div>
+    <div class="drugs__dropdown">
+      <label for="category" class="description__content"
+        >Выберите категорию:</label
+      >
+      <p-dropdown
+        id="category"
+        [options]="getCategories()"
+        [(ngModel)]="selectedCategory"
+        placeholder="Выберите категорию"
+      ></p-dropdown>
+    </div>
+
+    <!-- <div *ngIf="selectedCategory">
+      <label for="medication">Выберите лекарство:</label>
+      <p-dropdown
+        id="medication"
+        [options]="getMedications()"
+        [(ngModel)]="selectedMedication"
+        placeholder="Выберите лекарство"
+      ></p-dropdown>
+    </div> -->
+
+    <div *ngIf="selectedCategory">
+      <!-- <h3>Препараты в категории "{{ selectedCategory }}"</h3> -->
+      <p-table [value]="getMedicationsInCategory()">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Препарат</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-medication>
+          <tr>
+            <td>{{ medication }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
   </div>
 </div>
