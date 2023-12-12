@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 @Component({
@@ -6,7 +7,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./services-main.component.scss'],
 })
 export class ServicesMainComponent {
-  constructor(public translate: TranslateService) {
+  constructor(
+    public translate: TranslateService,
+    private scroller: ViewportScroller
+  ) {
     translate.addLangs(['en', 'ru', 'cn']);
     translate.setDefaultLang('ru');
     const browserLang = translate.getBrowserLang();
@@ -20,6 +24,10 @@ export class ServicesMainComponent {
   }
   visible: boolean = false;
 
+  onClickScroll(elId: string): void {
+    this.scroller.scrollToAnchor(elId);
+    console.log(elId);
+  }
   showDialog() {
     this.visible = true;
   }

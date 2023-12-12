@@ -55,6 +55,26 @@
       "FILETITLE-2": "STANDARDS AND IMPURITY STANDARDS",
       "FILETITLE-3": "AUXILIARY SUBSTANCES",
       "BUTTON": "Download File"
+    },
+    "CONTACTS": {
+      "TITLE-1": "HAVE A PROJECT?",
+      "TITLE-2": "LET'S DISCUSS!",
+      "BUTTON": "Download Company Brochure",
+      "ADDRESS": "Russian Federation, 117246, Moscow, Nauchny proezd, 17, bldg. 1/13/17.",
+      "PHONE": "Phone:",
+      "POLICY": "I agree to the privacy policy"
+    },
+    "FOOTER": {
+      "TITLE": "Get In Touch",
+      "MENU-1": "Home",
+      "MENU-2": "Medications",
+      "MENU-3": "Products",
+      "MENU-4": "Services",
+      "MENU-5": "Contacts",
+      "INFO-1": "+7 495 640 89 93",
+      "INFO-2": "farmadom2020@mail.ru",
+      "INFO-3": "",
+      "INFO-4": "Russian Federation, 117246, Moscow, Nauchny proezd, 17, bldg. 1/13/17."
     }
     
   }

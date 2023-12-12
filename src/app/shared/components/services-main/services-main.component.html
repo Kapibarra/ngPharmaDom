@@ -1,23 +1,23 @@
 <div class="services__wrapper">
   <div class="services">
-    <div class="service__card">
+    <div class="service__card" (click)="onClickScroll('logistic')">
       <img src="assets/imgs/service-card-1.png" />
       {{ "SERVICES.TITLECARD-1" | translate }}
     </div>
-    <div class="service__card">
+    <div class="service__card" (click)="onClickScroll('docs')">
       <img src="assets/imgs/service-card-2.png" />
       {{ "SERVICES.TITLECARD-2" | translate }}
     </div>
-    <div class="service__card">
+    <div class="service__card" (click)="onClickScroll('warehouse')">
       <img src="assets/imgs/service-card-3.png" />
       {{ "SERVICES.TITLECARD-3" | translate }}
     </div>
-    <div class="service__card">
+    <div class="service__card" (click)="onClickScroll('marketing')">
       <img src="assets/imgs/service-card-4.png" />
       {{ "SERVICES.TITLECARD-4" | translate }}
     </div>
   </div>
-  <div class="services__banner">
+  <div class="services__banner" id="logistic">
     <img src="assets/imgs/service-1.png" />
   </div>
   <div class="service__content-imgs">
@@ -97,7 +97,7 @@
       <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
-  <div class="services__banner">
+  <div class="services__banner" id="docs">
     <img src="assets/imgs/service-2.png" />
   </div>
   <div class="service__description-card">
@@ -119,7 +119,7 @@
       <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
-  <div class="services__banner">
+  <div class="services__banner" id="warehouse">
     <img src="assets/imgs/service-3.png" />
   </div>
   <div class="service__description-card">
@@ -141,7 +141,7 @@
       <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
-  <div class="services__banner">
+  <div class="services__banner" id="marketing">
     <img src="assets/imgs/service-4.png" />
   </div>
   <div class="service__description-card">
