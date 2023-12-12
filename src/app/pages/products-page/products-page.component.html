@@ -2,16 +2,9 @@
   <div class="products">
     <div class="products__description">
       <div class="products__description-content">
-        <div class="content__title">наши продукты</div>
+        <div class="content__title">{{ "PRODUCTS.TITLE" | translate }}</div>
         <div class="content__description">
-          Высокое качество нашей продукции - это то, чем мы гордимся и чем
-          отличаемся от других. Мы предлагаем только самое лучшее. Наша
-          продукция проходит тщательный контроль качества на каждом этапе
-          производства, начиная с выбора высококачественного сырья и материалов
-          и заканчивая окончательными испытаниями перед выпуском на
-          рынок.Фармадом предлагает широкий выбор активных фармацевтических
-          ингредиентов, упаковочных материалов, вспомогательных веществ и
-          аналитических стандартов из Индии и Китая.
+          {{ "PRODUCTS.DESCRIPTION" | translate }}
         </div>
       </div>
       <div class="products__description-img">
@@ -33,28 +26,28 @@
             class="drugs__btn"
             (click)="downloadFile('APIs_Therapeutic_Categorisation.xlsx')"
           >
-            Скачать файл
+            {{ "PRODUCTS.BUTTON" | translate }}
           </button>
         </div>
         <div class="drugs__card-title">
-          Активные фармацевтические субстанции
+          {{ "PRODUCTS.FILETITLE-1" | translate }}
         </div>
         <div class="drugs__card-item">
           <div class="drugs__card-img-wrapper">
             <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
           </div>
           <div class="drugs__card-file-title">
-            Samarpit_Impurities_and_Standards_Offered
+            Samarpit_Impurities_Standards.xlsx
           </div>
           <button
             class="drugs__btn"
             (click)="downloadFile('Samarpit_Impurities_and_Standards_Offered')"
           >
-            Скачать файл
+            {{ "PRODUCTS.BUTTON" | translate }}
           </button>
         </div>
         <div class="drugs__card-title">
-          Стандартные образцы и стандарты примесей
+          {{ "PRODUCTS.FILETITLE-2" | translate }}
         </div>
 
         <div class="drugs__card-item">
@@ -62,16 +55,18 @@
             <img class="drugs__card-item-img" src="assets/imgs/file_icon.svg" />
           </div>
           <div class="drugs__card-file-title">
-            Samarpit_Product_Excipients.xlsx
+            Samarpit_Excipients_List.xlsx
           </div>
           <button
             class="drugs__btn"
             (click)="downloadFile('Samarpit_Product_Excipients')"
           >
-            Скачать файл
+            {{ "PRODUCTS.BUTTON" | translate }}
           </button>
         </div>
-        <div class="drugs__card-title">Вспомогательные вещества</div>
+        <div class="drugs__card-title">
+          {{ "PRODUCTS.FILETITLE-3" | translate }}
+        </div>
       </div>
     </div>
   </div>

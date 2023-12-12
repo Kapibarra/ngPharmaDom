@@ -73,7 +73,8 @@
 }
 .menu__link a {
   border-radius: 33px;
-  background: #fff;
+  background: #e5f5fc;
+  border: 1px solid #39afe2;
   color: #20304a;
   font-family: Arial;
   display: block;
@@ -85,7 +86,11 @@
   text-decoration: none;
   box-sizing: border-box;
   padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
   &:hover {
     cursor: pointer;
+    background: #39afe2;
+    color: #e5f5fc;
+    transition: all 0.3s ease-in-out;
   }
 }

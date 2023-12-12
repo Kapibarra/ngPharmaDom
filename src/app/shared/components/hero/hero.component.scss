@@ -1,5 +1,5 @@
 .hero__wrapper {
-  background-image: url("../../../../assets/imgs/hero-bg.png");
+  background-image: url("../../../../assets/imgs/hero-bg-blur.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 672px;
@@ -34,7 +34,7 @@
           height: 65px;
           flex-shrink: 0;
           border-radius: 12px;
-          border: 1px solid #39afe2;
+          border: 2px solid #39afe2;
           color: #3cb3e7;
           text-align: center;
           font-family: Arial;
@@ -43,12 +43,19 @@
           font-weight: 900;
           line-height: 120%; /* 19.2px */
           text-transform: uppercase;
-          background: #eff1f4;
+          background: #ffffff;
           display: flex;
           align-items: center;
           justify-content: center;
           padding: 5px;
           box-sizing: border-box;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background: #39afe2;
+            cursor: pointer;
+            color: #e5f5fc;
+            transition: all 0.3s ease-in-out;
+          }
         }
       }
     }

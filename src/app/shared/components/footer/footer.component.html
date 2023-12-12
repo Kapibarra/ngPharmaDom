@@ -1,47 +1,48 @@
 <div class="footer__wrapper">
   <div class="footer">
     <button
-      (click)="showDialog()"
+      routerLink="/contacts"
       icon="pi pi-external-link"
       label="Show"
       class="footer__button"
     >
-      {{ "FOOTERBUTTON.BUTTON" | translate }}
+      {{ "FOOTER.TITLE" | translate }}
     </button>
     <div class="footer__menu">
       <div class="footer__menu-links">
         <ul>
           <li class="menu__link">
-            <a routerLink="/"> {{ "HEADER.MENU-1" | translate }}</a>
+            <a routerLink="/"> {{ "FOOTER.MENU-1" | translate }}</a>
           </li>
           <li class="menu__link">
-            <a routerLink="/drugs">{{ "HEADER.MENU-2" | translate }}</a>
+            <a routerLink="/drugs">{{ "FOOTER.MENU-2" | translate }}</a>
           </li>
           <li class="menu__link">
-            <a routerLink="/products">{{ "HEADER.MENU-3" | translate }}</a>
+            <a routerLink="/products">{{ "FOOTER.MENU-3" | translate }}</a>
           </li>
           <li class="menu__link">
-            <a routerLink="/services">{{ "HEADER.MENU-4" | translate }}</a>
+            <a routerLink="/services">{{ "FOOTER.MENU-4" | translate }}</a>
           </li>
           <li class="menu__link">
-            <a routerLink="/contacts">{{ "HEADER.MENU-5" | translate }}</a>
+            <a routerLink="/contacts">{{ "FOOTER.MENU-5" | translate }}</a>
           </li>
         </ul>
       </div>
       <div class="footer__menu-info">
         <ul>
-          <li class="menuinfo__link">информация</li>
-          <li class="menuinfo__link">информация</li>
+          <li class="menuinfo__link">{{ "FOOTER.INFO-1" | translate }}</li>
+          <li class="menuinfo__link">{{ "FOOTER.INFO-2" | translate }}</li>
         </ul>
       </div>
       <div class="footer__menu-social">
         <ul>
-          <li class="menusocial__link">информация</li>
-          <li class="menusocial__link">информация</li>
+          <li class="menusocial__link">{{ "FOOTER.INFO-4" | translate }}</li>
         </ul>
       </div>
     </div>
-    <div class="footer__copy">© 2023, Novikov studio</div>
+    <a class="footer__copy" href="https://t.me/kapibarra2315" target="_blank"
+      >© 2023, Novikov studio</a
+    >
   </div>
 </div>
 

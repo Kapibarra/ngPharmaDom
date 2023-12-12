@@ -4,52 +4,39 @@
       Наша компания реализовывает в России готовую лекарственную продукцию по
       следующим сегментам:
     </div>
-    <div class="drugs__description-card">
-      <div class="drugs__description">
-        <div class="description__title">Кардиология</div>
-        <div class="description__content"></div>
-      </div>
-      <div class="description__button" icon="pi pi-external-link" label="Show">
-        Задать вопрос
-        <img src="assets/imgs/button-arrow-big.png" />
-      </div>
-    </div>
-    <div class="drugs__dropdown">
-      <label for="category" class="description__content"
-        >Выберите категорию:</label
-      >
-      <p-dropdown
-        id="category"
-        [options]="getCategories()"
-        [(ngModel)]="selectedCategory"
-        placeholder="Выберите категорию"
-      ></p-dropdown>
-    </div>
 
-    <!-- <div *ngIf="selectedCategory">
-      <label for="medication">Выберите лекарство:</label>
-      <p-dropdown
-        id="medication"
-        [options]="getMedications()"
-        [(ngModel)]="selectedMedication"
-        placeholder="Выберите лекарство"
-      ></p-dropdown>
-    </div> -->
-
-    <div *ngIf="selectedCategory">
-      <!-- <h3>Препараты в категории "{{ selectedCategory }}"</h3> -->
-      <p-table [value]="getMedicationsInCategory()">
-        <ng-template pTemplate="header">
-          <tr>
-            <th>Препарат</th>
-          </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-medication>
-          <tr>
-            <td>{{ medication }}</td>
-          </tr>
-        </ng-template>
-      </p-table>
-    </div>
+    <p-accordion [activeIndex]="0" *ngIf="translate.currentLang === 'ru'">
+      <ng-container *ngFor="let category of medications | keyvalue">
+        <p-accordionTab [header]="category.key">
+          <ul>
+            <li *ngFor="let medication of category.value">
+              {{ medication }}
+            </li>
+          </ul>
+        </p-accordionTab>
+      </ng-container>
+    </p-accordion>
+    <p-accordion [activeIndex]="0" *ngIf="translate.currentLang === 'en'">
+      <ng-container *ngFor="let category of medicationsEn | keyvalue">
+        <p-accordionTab [header]="category.key">
+          <ul>
+            <li *ngFor="let medication of category.value">
+              {{ medication }}
+            </li>
+          </ul>
+        </p-accordionTab>
+      </ng-container>
+    </p-accordion>
+    <p-accordion [activeIndex]="0" *ngIf="translate.currentLang === 'cn'">
+      <ng-container *ngFor="let category of medicationsCn | keyvalue">
+        <p-accordionTab [header]="category.key">
+          <ul>
+            <li *ngFor="let medication of category.value">
+              {{ medication }}
+            </li>
+          </ul>
+        </p-accordionTab>
+      </ng-container>
+    </p-accordion>
   </div>
 </div>
