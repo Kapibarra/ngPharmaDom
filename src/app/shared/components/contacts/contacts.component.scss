@@ -315,3 +315,12 @@
   background: #0077ff;
   border-radius: 2px;
 }
+.highlighted a {
+  color: #39afe2;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    color: #0077ff;
+  }
+}
