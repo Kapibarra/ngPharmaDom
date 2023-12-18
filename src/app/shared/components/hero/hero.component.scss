@@ -1,6 +1,7 @@
 .hero__wrapper {
   background-image: url("../../../../assets/imgs/hero-bg-blur.png");
   background-repeat: no-repeat;
+  background-position-y: -5%;
   background-size: cover;
   min-height: 672px;
   display: flex;
@@ -12,6 +13,7 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+    max-height: 350px;
     & .hero__title {
       max-width: 700px;
       width: 100%;
