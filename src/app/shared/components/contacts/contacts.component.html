@@ -1,5 +1,5 @@
 <div class="contacts">
-  <h2 class="contacts__title">Контакты</h2>
+  <!-- <h2 class="contacts__title">Контакты</h2> -->
   <!-- <button class="contacts__button">
     <img src="assets/imgs/download.png" alt="" />Cкачать буклет о компании
   </button> -->
@@ -8,15 +8,15 @@
 <div class="form__wrapper">
   <div class="form__contacts">
     <div class="form__title">
-      Есть проект? <span class="black">Давайте обсудим!</span>
+      {{ "CONTACTS.TITLE-1" | translate }}
+      <span class="black">{{ "CONTACTS.TITLE-2" | translate }}</span>
     </div>
     <div class="form__adress">
-      Российская Федерация, 117246, г. Москва, Научный проезд д. 17, пом.
-      1/13/17.
+      {{ "CONTACTS.ADDRESS" | translate }}
     </div>
     <div class="form__contacts-links">
       <a class="form__link" href="tel:">
-        Телефон:
+        {{ "CONTACTS.PHONE" | translate }}
         <span class="highlighted"
           ><a href="tel:+74956408993">+7 495 640 89 93</a>
         </span>
@@ -32,7 +32,7 @@
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
     <div class="contact-form-item">
       <div class="contact-form-label__group">
-        <label for="name">Ваше имя:</label>
+        <label for="name">{{ "CONTACTS.INPUT-1" | translate }}</label>
         <input type="text" id="name" formControlName="name" required />
       </div>
 
@@ -80,7 +80,7 @@
 
     <div class="contact-form-item">
       <div class="contact-form-label__group">
-        <label for="phone">Ваш телефон:</label>
+        <label for="phone">{{ "CONTACTS.INPUT-3" | translate }}</label>
         <input type="tel" id="phone" formControlName="phone" appPhoneMask />
       </div>
       <div
@@ -96,35 +96,9 @@
         </div>
       </div>
     </div>
-    <!-- <div class="contact-form-item">
-      <div class="contact-form-label__group">
-        <label for="inn">ИНН:</label>
-        <input type="text" id="inn" formControlName="inn" required />
-      </div>
-
-      <div
-        *ngIf="
-          contactForm.get('inn')?.invalid && contactForm.get('inn')?.touched
-        "
-      >
-        <div *ngIf="contactForm.get('inn')?.hasError('required')" class="error">
-          ИНН обязателен.
-        </div>
-        <div *ngIf="contactForm.get('inn')?.hasError('pattern')" class="error">
-          Не верный формат ИНН.
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="contact-form-item">
-      <div class="contact-form-label__group">
-        <label for="city">Город:</label>
-        <input type="text" id="city" formControlName="city" />
-      </div>
-    </div> -->
-
     <div class="contact-form-item">
       <div class="contact-form-label__group">
-        <label for="message">Сообщение:</label>
+        <label for="message">{{ "CONTACTS.INPUT-4" | translate }}</label>
         <textarea
           id="message"
           formControlName="message"
@@ -144,7 +118,8 @@
     <div class="checkbox-wrapper">
       <label class="checkbox-label">
         <input type="checkbox" formControlName="policyAgreement" checked />
-        Я согласен с <a routerLink="/policy">политикой конфиденциальности</a>
+        {{ "CONTACTS.POLICY-1" | translate }}
+        <a routerLink="/policy">{{ "CONTACTS.POLICY-2" | translate }}</a>
       </label>
     </div>
 

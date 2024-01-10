@@ -1,9 +1,9 @@
 {
   "HEADER": {
   "MENU-1": "Home",
-  "MENU-2": "Medications",
-  "MENU-3": "Products",
-  "MENU-4": "Services",
+  "MENU-2": "Finish dosage forms",
+  "MENU-3": "Distribution",
+  "MENU-4": "Other services",
   "MENU-5": "Contacts"
   },
     "HOME": {
@@ -12,21 +12,21 @@
     },
     "ABOUT": {
       "TITLE-1": "Production",
-      "TEXT-1": "OOO 'Farmadom' is a company with an extensive portfolio. Production of finished pharmaceuticals at Russian pharmaceutical sites. The key directions of the portfolio include generics of various therapeutic groups, in demand in retail pharmacies.",
+      "TEXT-1": "Pharmadom LLC FROM P NOT F NAME is a company with an extensive portfolio of Pharmaceutical Substances and Auxiliary materials. We have Production of finished pharmaceuticals at Russian pharmaceutical sites. The key directions of the portfolio include generics of various therapeutic groups, in retail pharmacies. ",
       "TITLE-2": "Distribution",
-      "TEXT-2": "We specialize in supplies of active pharmaceutical ingredients, packaging materials, excipients, and analytical standards from India and China.",
+      "TEXT-2": "We specialize in supplies of active pharmaceutical ingredients, packaging materials, excipients, and analytical standards and Impurities from India and China.",
       "TITLE-3": "Logistic Services",
-      "TEXT-3": "Full control of deliveries with the possibility of shipping goods of different volumes, temperature regimes on CIP and DDP terms (from our warehouse in Moscow).",
+      "TEXT-3": "We provide complete logistics Solutions with Full control of deliveries. With comprehensive shipping services like different volumes, temperature regimes and Different Incoterms such as CIP, CIF, FOB and DDP terms. Having warehouse facilities in India and in Russia (from our warehouse in Moscow). ",
       "TITLE-4": "Registration Services",
-      "TEXT-4": "OOO 'Farmadom' is ready to assist in making relevant changes to the regulatory documentation of substances, within the framework of the current legislation of the Russian Federation."
+      "TEXT-4": "Pharmadom LLC provides complete regulatory support and services The EAEU ensures the freedom of movement of goods, services, capital and labour, and the implementation of coordinated, agreed or unified policies in the sectors of the economy. This move is in the same direction as Europe or USA. The Russian & CIS Pharmaceutical Industry is also getting formalised and highly regulated with mandatory plant inspections. In such a scenario it has become mandatory that pharmaceutical manufacturers will require an all hands-on approach & ears to the continuous developments taking place and it is here where we come in with our services of registration, regulatory compliance and plant inspection for EAEU. We are also providing regulatory services to countries like Georgia which are not covered under EAEU group countries. "
       },
       "FOOTERBUTTON": {
         "BUTTON":"Contact Us"
       },
     "HERO": {
-       "TITLE": "Young and actively developing pharmaceutical company providing services from A to Z in this market."
+       "TITLE": "WE ARE A PHARMACEUTICAL COMPANY MANUFACTURING AND PROVIDING PHARMACEUTICAL SERVICES IN RUSSIA AND CIS REGIONS. "
             },
-    "BUTTON": "Become client",
+    "BUTTON": "Contact us",
     "SERVICE": {
       "TITLE": "Our services",
       "SUBTITLE-1":"Russia and other countries",
@@ -44,15 +44,25 @@
       "TITLECARD-3": "Warehousing Services",
       "TITLECARD-4": "Marketing Services",
       "DESCRIPTIONCARD-1": "Cargo Consolidation",
-      "DESCRIPTIONCONTENT-1": "Cargo consolidation is necessary for many companies requiring the transportation of international goods in small volumes. In such cases, transporting an entire container or vehicle becomes cost-prohibitive. To reduce costs, small-sized shipments are typically transported as part of consolidated cargo, commonly known as consolidated shipments.",
+      "DESCRIPTIONCONTENT-1": "Pharmadom provides cargo consolidation service to offer customers with the option of receiving even small lots at low rates by sea. With our logistics team keeping track of every step of the process from the order to the delivery, The whole shipping process becomes very convenient. .",
       "DESCRIPTIONCARD-2": "Cold Chain Transport",
-      "DESCRIPTIONCONTENT-2": "An important component of this process is transportation with a temperature regime, ensuring the conditions necessary for the preservation of bio-products in a usable state throughout the entire journey."
+      "DESCRIPTIONCONTENT-2": "We are also providing Cold chain and temperature-controlled cargo services for critical substances which require specific temperature to be maintained whilst in transit. ",
+      "DESCRIPTIONCARD-3":" Customs clearance of goods and obtaining import permits ",
+      "DESCRIPTIONCONTENT-3":"We Provide material on DDP basis as well, where we take care of clearing the customer’s goods from the Destination Customs. By coordinating with International logistics companies and support from our team we deliver goods on all Incoterms and also deliver to all major seaports and Airports such as Sheremetyevo, Domodedovo, St. Petersburg, Minsk, Vladivostok, Astrakhan, Novorossiysk, Klaipeda and others ",
+      "DESCRIPTIONCARD-4":"Multimodal transportation ",
+      "DESCRIPTIONCONTENT-4":"For Delivering a consignment to remote regions can be challenging and difficult, Our company has partnered with international logistics companies to offer our clients services and delivery even to remote locations in Russia and CIS by use of multimodal transport systems.  ",
+      "DESCRIPTIONCARD-5":" Regulatory Services ",
+      "DESCRIPTIONCONTENT-5":"Regulatory Compliance is an important and integral part of the pharmaceutical industry. Due to the nature of this industry, pharmaceutical companies must strictly follow numerous rules, regulations and legislation to ensure the safety and effectiveness of their products. A team of experts at pharmadom LLC is ready to provide all necessary assistance in regulatory matters to each customer in the international pharmaceutical industry. Our range of competencies includes: obtaining EAEU certificates, obtaining licenses for pharmaceutical activities, making changes to the regulatory documentation of substances and finished dosage forms within the framework of the current legislation of the Russian Federation and other partner countries.​ ​",
+      "DESCRIPTIONCARD-6":"Warehousing Services ",
+      "DESCRIPTIONCONTENT-6":"Pharmadom seeks to solve the problem of lack of access to large transport hubs for small and medium-sized drug manufacturers in Russia. We offer local warehousing services that enable pharmaceutical businesses to efficiently meet demand for their products. Our warehouse meets the licensing conditions for pharmaceutical activities in the Russian Federation and the international requirements of good practices GDP, GSP. Our warehouse infrastructure is located in a convenient logistics location near Domodedovo Airport, which ensures convenient delivery and storage of pharmaceutical products. We have modern temperature and humidity control systems to maintain the quality and stability of raw materials throughout the entire storage period. Additionally, we recognize the importance of agility in pharmaceutical manufacturing. Therefore, we are ready to provide urgent supplies of materials to meet the needs of large manufacturers. We maintain stocks of necessary raw materials in our warehouse in Russia, which allows us to respond quickly to requests and ensure continuity of production. Our team of professionals has extensive experience in pharmaceutical logistics and regulatory affairs. We carefully follow the rules and regulations related to the storage, transportation and documentation of pharmaceutical products to ensure their safety and compliance. ",
+      "DESCRIPTIONCARD-7":"Marketing and analysis of the pharmaceutical Industry. ",
+      "DESCRIPTIONCONTENT-7":"In order to implement the plans of interested parties (foreign manufacturers of pharmaceutical raw materials, finished medicinal products) who want to become participants in the pharmaceutical market of the Russian Federation and CIS Region, our company provides services for marketing research and promotion of pharmaceutical products, using extensive resources, experience and knowledge of the pharmaceutical market. Market analysis can be:✓ Analysis of the size, dynamics and development potential of the market✓ Research of market conditions, market segmentation and identification of key segments✓ Competitive market analysis ✓ Price analysis and general economic analysis of the market ✓ Analysis of the structure of distribution or distribution of goods on the market ✓ Analysis of demand, key needs and characteristics of buyer behavior in the market ✓ Identification of the main market and consumer trends Promotion of products in the pharmaceutical market: Our company has a wide base of participants pharmaceutical market. We provide support and promotion, informing new participants pharmaceutical market in order to release their products into wide consumption. Many years of experience working with manufacturers of finished dosage forms gives significant results to our clients and helps them acquire their niche in this market. "
     },
     "PRODUCTS": {
       "TITLE": "OUR PRODUCTS",
-      "DESCRIPTION": "The high quality of our products is what we take pride in and what sets us apart from others. We offer only the very best. Our products undergo rigorous quality control at every stage of production, starting from the selection of high-quality raw materials and materials to the final tests before release to the market. Pharmadom offers a wide range of active pharmaceutical ingredients, packaging materials, excipients, and analytical standards from India and China.",
+      "DESCRIPTION": "The high quality of our products is what we take pride in and what sets us apart from others. We offer only the very best. Our products undergo rigorous quality control at every stage of production, starting from the selection of high-quality raw materials and Implementation of apex Quality control systems before releasing the finished product into the market. Pharmadom offers a wide range of Finish dosage forms, Active pharmaceutical ingredients, packaging materials, excipients, and analytical standards from India, Russia and China. ",
       "FILETITLE-1": "ACTIVE PHARMACEUTICAL INGREDIENTS",
-      "FILETITLE-2": "STANDARDS AND IMPURITY STANDARDS",
+      "FILETITLE-2": "Standards and Impurities",
       "FILETITLE-3": "AUXILIARY SUBSTANCES",
       "BUTTON": "Download File"
     },
@@ -61,8 +71,13 @@
       "TITLE-2": "LET'S DISCUSS!",
       "BUTTON": "Download Company Brochure",
       "ADDRESS": "Russian Federation, 117246, Moscow, Nauchny proezd, 17, bldg. 1/13/17.",
-      "PHONE": "Phone:",
-      "POLICY": "I agree to the privacy policy"
+      "INPUT-1": "Your name:",
+      "INPUT-3": "Your phone:",
+      "INPUT-4": "Message:",
+      "POLICY-1": "I agree to the",
+      "POLICY-2": "privacy policy",
+      "PHONE": "Phone:"
+      
     },
     "FOOTER": {
       "TITLE": "Get In Touch",
