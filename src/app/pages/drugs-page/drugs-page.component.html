@@ -1,8 +1,8 @@
 <div class="drugs__wrapper">
   <div class="drugs">
+    <img src="assets/imgs/drugs.png" class="drugs__main-img" />
     <div class="drugs__title">
-      Наша компания реализовывает в России готовую лекарственную продукцию по
-      следующим сегментам:
+      {{ "DRUGS.TITLE" | translate }}
     </div>
 
     <p-accordion [activeIndex]="0" *ngIf="translate.currentLang === 'ru'">
