@@ -26,6 +26,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { DrugsPageComponent } from './pages/drugs-page/drugs-page.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { ExtraOptions, RouterModule } from '@angular/router';
+import { LanguageService } from './services/language.service';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -70,5 +71,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     }),
   ],
   bootstrap: [AppComponent],
+  providers: [LanguageService],
 })
 export class AppModule {}

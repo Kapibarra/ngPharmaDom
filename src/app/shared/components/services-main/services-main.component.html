@@ -20,7 +20,10 @@
   <div class="services__banner" id="logistic">
     <img src="assets/imgs/service-1.png" />
   </div>
-  <div class="service__content-imgs" *ngIf="translate.currentLang === 'ru'">
+  <div
+    class="service__content-imgs"
+    *ngIf="languageService.translate.currentLang === 'ru'"
+  >
     <div class="content__img">
       <img src="assets/imgs/content-img-1.png" />
     </div>
@@ -36,7 +39,10 @@
       </div>
     </div>
   </div>
-  <div class="service__content-imgs" *ngIf="translate.currentLang === 'en'">
+  <div
+    class="service__content-imgs"
+    *ngIf="languageService.translate.currentLang === 'en'"
+  >
     <div class="content__img">
       <img src="assets/imgs/content-img-1-en.png" />
     </div>
@@ -52,7 +58,10 @@
       </div>
     </div>
   </div>
-  <div class="service__content-imgs" *ngIf="translate.currentLang === 'cn'">
+  <div
+    class="service__content-imgs"
+    *ngIf="languageService.translate.currentLang === 'cn'"
+  >
     <div class="content__img">
       <img src="assets/imgs/content-img-1-cn.png" />
     </div>

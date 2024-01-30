@@ -1,6 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/services/language.service';
 @Component({
   selector: 'app-services-main',
   templateUrl: './services-main.component.html',
@@ -8,19 +9,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ServicesMainComponent {
   constructor(
-    public translate: TranslateService,
+    public languageService: LanguageService,
     private scroller: ViewportScroller
-  ) {
-    translate.addLangs(['en', 'ru', 'cn']);
-    translate.setDefaultLang('ru');
-    const browserLang = translate.getBrowserLang();
-    const langToUse =
-      browserLang && ['en', 'ru', 'cn'].includes(browserLang)
-        ? browserLang
-        : 'ru';
-
-    // Установите выбранный язык
-    translate.use(langToUse);
+  ) {}
+  changeLanguage(lang: string) {
+    this.languageService.setLanguage(lang);
   }
   visible: boolean = false;
 

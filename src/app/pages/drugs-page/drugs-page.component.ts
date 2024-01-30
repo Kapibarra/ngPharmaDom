@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SelectItem } from 'primeng/api';
+import { LanguageService } from 'src/app/services/language.service';
 
 interface Medications {
   Кардиология: string[];
@@ -197,17 +198,10 @@ export class DrugsPageComponent {
   selectedCategory: string = 'Кардиология';
   selectedMedication: string = '';
 
-  constructor(public translate: TranslateService) {
-    translate.addLangs(['en', 'ru', 'cn']);
-    translate.setDefaultLang('ru');
-    const browserLang = translate.getBrowserLang();
-    const langToUse =
-      browserLang && ['en', 'ru', 'cn'].includes(browserLang)
-        ? browserLang
-        : 'ru';
+  constructor(public languageService: LanguageService) {}
 
-    // Установите выбранный язык
-    translate.use(langToUse);
+  changeLanguage(lang: string) {
+    this.languageService.setLanguage(lang);
   }
   downloadFile(fileName: string): void {
     const fileUrl = `assets/downloads/${fileName}`;
