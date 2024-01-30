@@ -76,7 +76,8 @@
       "INPUT-4": "消息：",
       "PHONE": "电话：",
       "POLICY-1": "我同意 ",
-      "POLICY-2": " 隐私政策"
+      "POLICY-2": " 隐私政策",
+      "SEND": "发送"
     },
     "FOOTER": {
       "TITLE": "联系我们",

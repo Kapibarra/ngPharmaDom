@@ -76,7 +76,8 @@
       "INPUT-4": "Message:",
       "POLICY-1": "I agree to the",
       "POLICY-2": "privacy policy",
-      "PHONE": "Phone:"
+      "PHONE": "Phone:",
+      "SEND": "Send"
       
     },
     "FOOTER": {
