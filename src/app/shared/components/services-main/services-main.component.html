@@ -20,7 +20,7 @@
   <div class="services__banner" id="logistic">
     <img src="assets/imgs/service-1.png" />
   </div>
-  <div class="service__content-imgs">
+  <div class="service__content-imgs" *ngIf="translate.currentLang === 'ru'">
     <div class="content__img">
       <img src="assets/imgs/content-img-1.png" />
     </div>
@@ -36,6 +36,38 @@
       </div>
     </div>
   </div>
+  <div class="service__content-imgs" *ngIf="translate.currentLang === 'en'">
+    <div class="content__img">
+      <img src="assets/imgs/content-img-1-en.png" />
+    </div>
+    <div class="content__imgs-inner">
+      <div class="content__img">
+        <img src="assets/imgs/content-img-2-en.png" />
+      </div>
+      <div class="content__img small">
+        <img src="assets/imgs/content-img-3-en.png" />
+      </div>
+      <div class="content__img small">
+        <img src="assets/imgs/content-img-4-en.png" />
+      </div>
+    </div>
+  </div>
+  <div class="service__content-imgs" *ngIf="translate.currentLang === 'cn'">
+    <div class="content__img">
+      <img src="assets/imgs/content-img-1-cn.png" />
+    </div>
+    <div class="content__imgs-inner">
+      <div class="content__img">
+        <img src="assets/imgs/content-img-2-cn.png" />
+      </div>
+      <div class="content__img small">
+        <img src="assets/imgs/content-img-3-cn.png" />
+      </div>
+      <div class="content__img small">
+        <img src="assets/imgs/content-img-4-cn.png" />
+      </div>
+    </div>
+  </div>
   <div class="service__description-card">
     <div class="service__description">
       <div class="description__title">
@@ -44,10 +76,6 @@
       <div class="description__content">
         {{ "SERVICES.DESCRIPTIONCONTENT-1" | translate }}
       </div>
-    </div>
-    <div class="description__button">
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
   <div class="service__description-card">
@@ -59,10 +87,6 @@
         {{ "SERVICES.DESCRIPTIONCONTENT-2" | translate }}
       </div>
     </div>
-    <div class="description__button">
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
-    </div>
   </div>
   <div class="service__description-card">
     <div class="service__description">
@@ -73,10 +97,6 @@
         {{ "SERVICES.DESCRIPTIONCONTENT-3" | translate }}
       </div>
     </div>
-    <div class="description__button">
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
-    </div>
   </div>
   <div class="service__description-card">
     <div class="service__description">
@@ -86,15 +106,6 @@
       <div class="description__content">
         {{ "SERVICES.DESCRIPTIONCONTENT-4" | translate }}
       </div>
-    </div>
-    <div
-      class="description__button"
-      (click)="showDialog()"
-      icon="pi pi-external-link"
-      label="Show"
-    >
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
   <div class="services__banner" id="docs">
@@ -109,15 +120,6 @@
         {{ "SERVICES.DESCRIPTIONCONTENT-5" | translate }}
       </div>
     </div>
-    <div
-      class="description__button"
-      (click)="showDialog()"
-      icon="pi pi-external-link"
-      label="Show"
-    >
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
-    </div>
   </div>
   <div class="services__banner" id="warehouse">
     <img src="assets/imgs/service-3.png" />
@@ -131,15 +133,6 @@
         {{ "SERVICES.DESCRIPTIONCONTENT-6" | translate }}
       </div>
     </div>
-    <div
-      class="description__button"
-      (click)="showDialog()"
-      icon="pi pi-external-link"
-      label="Show"
-    >
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
-    </div>
   </div>
   <div class="services__banner" id="marketing">
     <img src="assets/imgs/service-4.png" />
@@ -152,15 +145,6 @@
       <div class="description__content">
         {{ "SERVICES.DESCRIPTIONCONTENT-7" | translate }}
       </div>
-    </div>
-    <div
-      class="description__button"
-      (click)="showDialog()"
-      icon="pi pi-external-link"
-      label="Show"
-    >
-      Задать вопрос
-      <img src="assets/imgs/button-arrow-big.png" />
     </div>
   </div>
 </div>
