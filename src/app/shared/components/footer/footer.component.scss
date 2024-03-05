@@ -15,6 +15,7 @@
     gap: 20px;
     justify-content: space-between;
     padding-top: 20px;
+    margin-bottom: 30px;
     & .menu__link a {
       color: #20304a;
       font-family: Manrope;
@@ -54,8 +55,9 @@
   font-weight: 700;
   line-height: 115%; /* 27.6px */
   text-transform: uppercase;
-  padding-top: 55px;
+  margin-top: 55px;
   padding-bottom: 50px;
+  box-sizing: border-box;
 }
 .footer__menu-social {
   max-width: 160px;

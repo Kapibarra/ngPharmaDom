@@ -96,7 +96,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 940px;
+  max-width: 1140px;
 }
 .description__title {
   color: #282e3e;
@@ -113,6 +113,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 17px; /* 121.429% */
+  text-align: justify;
 }
 .description__button {
   display: flex;
