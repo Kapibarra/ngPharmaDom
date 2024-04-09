@@ -1,7 +1,21 @@
 <div class="hero__wrapper">
   <div class="hero">
     <div class="hero__logo">
-      <img src="assets/imgs/hero-logo.png" alt="hero" />
+      <img
+        *ngIf="languageService.translate.currentLang === 'ru'"
+        src="assets/imgs/hero-logo.png"
+        alt="hero"
+      />
+      <img
+        *ngIf="languageService.translate.currentLang === 'en'"
+        src="assets/imgs/hero-logo-eng.png"
+        alt="hero"
+      />
+      <img
+        *ngIf="languageService.translate.currentLang === 'cn'"
+        src="assets/imgs/hero-logo-eng.png"
+        alt="hero"
+      />
     </div>
     <div class="hero__title">
       {{ "HERO.TITLE" | translate }}

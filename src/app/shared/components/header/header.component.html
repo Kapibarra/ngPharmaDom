@@ -2,7 +2,21 @@
   <div class="header">
     <div class="header__top">
       <div class="header__logo">
-        <img src="assets/imgs/hero-logo.png" alt="" />
+        <img
+          *ngIf="languageService.translate.currentLang === 'ru'"
+          src="assets/imgs/hero-logo.png"
+          alt="hero"
+        />
+        <img
+          *ngIf="languageService.translate.currentLang === 'en'"
+          src="assets/imgs/hero-logo-eng.png"
+          alt="hero"
+        />
+        <img
+          *ngIf="languageService.translate.currentLang === 'cn'"
+          src="assets/imgs/hero-logo-eng.png"
+          alt="hero"
+        />
       </div>
 
       <div class="header__lang-select">
